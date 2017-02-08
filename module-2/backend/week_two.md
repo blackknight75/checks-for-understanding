@@ -48,7 +48,7 @@ name                 name
 7. Describe the relationship between a foreign key on one table and a primary key on another table.
 ***This allows the table that holds the foreign key to access the data from the other table where the foreign key came from.***
 8. What are the parts of an HTTP response?
-***Request sent to controller ---> talks to model ---> model talks to database and gets data ---> model returns data to controller ---> controller sends data to erb that translates to html ---> html is returned to controller ---> controller renders view for client.
+***Request sent to controller ---> talks to model ---> model talks to database and gets data ---> model returns data to controller ---> controller sends data to erb that translates to html ---> html is returned to controller ---> controller renders view for client.***
 
 ### Optional Questions
 
