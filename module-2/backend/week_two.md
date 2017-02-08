@@ -5,6 +5,8 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 Note: When you're done, submit a PR.
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
+  ***It is a set of methods that can perform complex SQL query. It is an ORM. A medium between the database and the model thats talking to it.
+  
 2. Assume you have the following model:
 
 ```ruby
@@ -13,8 +15,13 @@ end
 ```
 
 What are some methods you can call on `Team`? If these methods aren't defined in the class, how do you have access to them?
+***Team.all, Team.first, Team.new
+***Raw SQL query
 
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
+*** team = Team.find(4)/ team.name***
+***I don't really understand the question. There are no relationships in the class so it wouldnt be able to get the `owner_id`***
+
 
 4. Assume that you added a line to your `Team` class as follows:
 
@@ -25,12 +32,23 @@ end
 ```
 
 Now how would you find the owner of the team with an id of 4?
+*** team = Team.find(4)/ team.owner.name***
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
-6. Define foreign key, primary key, and schema.
-7. Describe the relationship between a foreign key on one table and a primary key on another table.
-8. What are the parts of an HTTP response?
 
+TEACHER--1--has--n--STUDENT
+id                   id
+name                 name
+                     teacher_id
+
+6. Define foreign key, primary key, and schema.
+***Foreign Key is a key from another table that the owner can use to acces information from that other table.***
+***Primary Key is a unique key that identifies the row***
+***Schema is the layout of your database. It shows all the attributes and associated keys/ids.***
+7. Describe the relationship between a foreign key on one table and a primary key on another table.
+***This allows the table that holds the foreign key to access the data from the other table where the foreign key came from.***
+8. What are the parts of an HTTP response?
+***Request sent to controller ---> talks to model ---> model talks to database and gets data ---> model returns data to controller ---> controller sends data to erb that translates to html ---> html is returned to controller ---> controller renders view for client.
 
 ### Optional Questions
 
