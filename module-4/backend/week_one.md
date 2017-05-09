@@ -32,4 +32,4 @@ Note: When you're done, submit a PR.
 12. What is AJAX? What are some benefits of using AJAX?
 >Make JS calls on a client side view. This allows us to change data displayed on a page without refreshing it.
 13. What's a background worker? When would we want to use a background worker?
->I have never used them so I am a bit fuzzy on this topic.
+>I have never used them so I am a bit fuzzy on this topic. The example I remember from class was setting up a mail server and then using the background worker to do the process of sending email so your program doesnt need to wait for it.
