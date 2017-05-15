@@ -7,8 +7,9 @@ Note: When you're done, submit a PR.
 1. What is Webpack and why is it useful?
 >Webpack translates code that the browser doesnt understand. Before pushing your code to production you must run the webpack compiler to >translate the JS,JQuery, ES6/7.
 2. When do you want to use event delegation?
-
+>When order of events is important.
 3. What's one difference between ES5 and ES6?
+> I belive ES6 has more encapsulation geared towards OO design. You can use classes in ES6.
 4. What's the deal with semi-colons in JavaScript?
 >it marks the end of a command (optional)
 5. How are you using the MVC design pattern in your Quantified Self project?
@@ -30,5 +31,6 @@ Note: When you're done, submit a PR.
 >Stateless: No client data is stored on the sever between requests. Session state is stored on the client(cookies).
 >Cacheable: Clients can cache responses to improve performance.
 11. What are some main characteristics of a team following an agile workflow?
+>Colaborating with customer, get your software working, being able to change the plan.
 12. What are some advantages/disadvantages to using OAuth to authenticate a user?
 >you put all the responsibility for password management on a third party. The disadvantage to this is if that site goes down or changes how the oauth is used your app could have significant down time. Performance could also be an issue.
